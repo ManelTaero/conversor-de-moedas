@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#123b72">
+
+    <title>Conversor de Moedas</title>
+
+    <link rel="stylesheet" href="estilo_do_conversor.css">
+</head>
+
+<body>
+
+<main class="app">
+
+    <header>
+        <div class="symbol">⇄</div>
+        <h1>Conversor de Moedas</h1>
+        <p>Conversão de moedas internacionais</p>
+    </header>
+
+    <label for="amount">Introduza o valor</label>
+
+    <input
+        type="text"
+        id="amount"
+        class="field amount"
+        placeholder="0"
+        value="1000"
+        readonly
+    >
+
+    <div class="currencies">
+
+        <div>
+            <label for="from">De</label>
+
+            <select id="from" class="field">
+                <option value="MZN">MZN - Metical</option>
+                <option value="USD">USD - Dólar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="ZAR">ZAR - Rand</option>
+            </select>
+        </div>
+
+        <button id="swap" class="swap" type="button">
+            ⇄
+        </button>
+
+        <div>
+            <label for="to">Para</label>
+
+            <select id="to" class="field">
+                <option value="USD">USD - Dólar</option>
+                <option value="MZN">MZN - Metical</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="ZAR">ZAR - Rand</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- TECLADO NUMÉRICO -->
+
+    <div class="keypad">
+
+        <button class="key" data-number="1">1</button>
+        <button class="key" data-number="2">2</button>
+        <button class="key" data-number="3">3</button>
+
+        <button class="key" data-number="4">4</button>
+        <button class="key" data-number="5">5</button>
+        <button class="key" data-number="6">6</button>
+
+        <button class="key" data-number="7">7</button>
+        <button class="key" data-number="8">8</button>
+        <button class="key" data-number="9">9</button>
+
+        <button class="key delete" id="delete">Del</button>
+        <button class="key" data-number="0">0</button>
+        <button class="key decimal" id="decimal">.</button>
+
+    </div>
+
+    <!-- RESULTADO -->
+
+    <div class="result">
+
+        <small>Valor convertido</small>
+
+        <div id="output">15,63 USD</div>
+
+        <div id="rate">
+            Taxa de conversão
+        </div>
+
+    </div>
+
+    <div class="error" id="error"></div>
+
+    <button class="confirm" id="keyOK">
+        CONFIRMAR CONVERSÃO
+    </button>
+
+    <button class="clear" id="clear">
+        LIMPAR TUDO
+    </button>
+
+</main>
+
+<script src="index.js"></script>
+
+</body>
+</html>
