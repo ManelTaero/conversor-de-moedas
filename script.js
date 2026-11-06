@@ -1,4 +1,3 @@
-
 // TAXAS DE CÂMBIO
 const taxas = {
     MZN: 1,
@@ -23,7 +22,7 @@ const output = document.getElementById("output");
 const rate = document.getElementById("rate");
 const error = document.getElementById("error");
 
-let valorAtual = "1000";
+let valorAtual = "0";
 
 // ACTUALIZAR E CONVERTER
 function atualizar() {
