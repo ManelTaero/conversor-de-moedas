@@ -2,9 +2,9 @@
 // TAXAS DE CÂMBIO
 const taxas = {
     MZN: 1,
-    USD: 1 / 64,
-    EUR: 1 / 69,
-    ZAR: 1 / 3.5
+    USD: 1 / 63.91,
+    EUR: 1 / 71.52,
+    ZAR: 1 / 3.86
 };
 
 // SÍMBOLOS
